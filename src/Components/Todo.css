@@ -1,0 +1,88 @@
+body{
+    background-color: rgb(38, 37, 37);
+}
+
+.toDoList{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 100px 0 0 0;
+}
+
+h1{
+    font-size: 3.5rem;
+    color: white;
+}
+button{
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    padding: 8px 15px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.main{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.addBtn{
+    font-size: 1.4rem;
+    background-color: hsl(202, 63%, 46%);
+}
+.addBtn:hover{
+    background-color: hsl(229, 79%, 43%);
+}
+.editBtn{
+    background-color: hsl(120, 100%, 33%);
+}
+.editBtn:hover{
+    background-color: hsl(120, 100%, 23%);
+}
+.deleteBtn{
+    background-color: hsl(0, 83%, 60%);
+}
+.deleteBtn:hover{
+    background-color: hsl(0, 83%, 48%);
+}
+ol{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+input{
+    font-size: 1.1rem;
+    border: 2px solid rgb(99, 95, 95);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+li{
+    width: 50%;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 3px solid rgb(85, 83, 83);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.text{
+    flex: 1 ;
+    color: white;
+}
+
+.editBtn,.deleteBtn{
+    margin-left: 10px;
+}
