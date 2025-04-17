@@ -11,7 +11,7 @@ const Todo = () => {
     setNewTask(event.target.value)
   }
 
-  function addTasks(){
+  function addTasks() {
 
     if (newtask.trim() !== "") {
       if (currentTaskIndex === null) {
@@ -28,12 +28,12 @@ const Todo = () => {
 
   }
 
-  function editTask(index){
+  function editTask(index) {
     setNewTask(tasks[index])
     setCurrentTaskIndex(index)
   }
 
-  function deleteTask(index){
+  function deleteTask(index) {
     const updatedTasks = tasks.filter((_, i) => i !== index)
     setTasks(updatedTasks)
   }
@@ -49,29 +49,31 @@ const Todo = () => {
           value={newtask}
           onChange={handleChange}
         />
-        <button 
-        className="addBtn"
-        onClick={addTasks}
+        <button
+          className="addBtn"
+          onClick={addTasks}
         >
-         {currentTaskIndex === null ? "Add" : "Update"}
+          {currentTaskIndex === null ? "Add" : "Update"}
         </button>
       </div>
       <ol>
-        {tasks.map((task, index) => 
+        {tasks.map((task, index) =>
           <li key={index}>
             <span className='text'>{task}</span>
-            <button 
-            className='editBtn'
-            onClick={()=>editTask(index)}
-            >Edit</button>
-            <button 
-            className='deleteBtn'
-            onClick={()=>deleteTask(index)}
-            >Delete</button>
-          </li>        
+            <div className="Btns">
+              <button
+                className='editBtn'
+                onClick={() => editTask(index)}
+              >Edit</button>
+              <button
+                className='deleteBtn'
+                onClick={() => deleteTask(index)}
+              >Delete</button>
+            </div>
+          </li>
         )}
       </ol>
-      
+
     </div>
   )
 }

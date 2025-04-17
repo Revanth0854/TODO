@@ -3,6 +3,7 @@ body{
 }
 
 .toDoList{
+    width: 100%;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     margin: 100px 0 0 0;
@@ -52,9 +53,9 @@ button{
     background-color: hsl(0, 83%, 48%);
 }
 ol{
-    width: 100%;
+    width: 90%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
     align-items: center;
     list-style: none;
@@ -67,19 +68,19 @@ input{
 }
 
 li{
-    width: 50%;
+    width: 45%;
     font-size: 2rem;
     font-weight: bold;
-    padding: 15px;
+    padding: 10px;
     margin-bottom: 10px;
     border: 3px solid rgb(85, 83, 83);
     border-radius: 5px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .text{
-    flex: 1 ;
     color: white;
 }
 
