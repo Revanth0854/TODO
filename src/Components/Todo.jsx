@@ -68,12 +68,10 @@ const Todo = () => {
             className='deleteBtn'
             onClick={()=>deleteTask(index)}
             >Delete</button>
-
-          </li>
-          
+          </li>        
         )}
       </ol>
-
+      
     </div>
   )
 }
